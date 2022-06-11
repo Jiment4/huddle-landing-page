@@ -1,0 +1,421 @@
+    /*variables*/
+    /*## Colors 
+### Primary*/
+    
+    $pink: hsl(322, 100%, 66%);
+    $lightPink: hsl(321, 100%, 78%);
+    $lightRed: hsl(0, 100%, 63%);
+    /*### Neutral*/
+    
+    $veryDarkCyan: hsl(192, 100%, 9%);
+    $veryPaleBlue: hsl(207, 100%, 98%);
+    /*## Typography
+
+### Headings*/
+    
+    $familyPoppins:'Poppins',
+    sans-serif;
+    /*Weights: 700*/
+    /*### Body*/
+    
+    $familyOpen:'Open Sans',
+    sans-serif;
+    /*Weights: 400, 600, 700 */
+    
+    body {
+        width: 100%;
+    }
+    
+    .btnFlex {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .r1-d {
+        height: 100px;
+        display: flex;
+        align-content: center;
+    }
+    
+    .r1Btn {
+        color: $pink;
+        padding: 8px 40px;
+        border: 1px solid $pink;
+        border-radius: 36px;
+        background-color: transparent;
+        font: {
+            size: 18px;
+            family: $familyOpen;
+            weight: 400;
+        }
+    }
+    
+    .r1Btn:hover {
+        color: $lightPink;
+        border: 1px solid $lightPink;
+    }
+    
+    .r2-d {
+        height: 550px;
+        display: flex;
+        align-content: center;
+    }
+    
+    .r2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        gap: 22px;
+        &__title {
+            font: {
+                size: 46px;
+                family: $familyPoppins;
+                weight: 700;
+            }
+            color:$veryDarkCyan;
+        }
+        &__paragraph {
+            font: {
+                size: 18px;
+                family: $familyOpen;
+                weight: 600;
+            }
+            color:$veryDarkCyan;
+            text-align:center;
+            line-height: 30px;
+        }
+        &__button {
+            color: $veryPaleBlue;
+            padding: 20px 90px;
+            background-color: $pink;
+            border-radius: 36px;
+            border: none;
+            border-radius: 46px;
+            box-shadow: 6px 6px 12px #ababab, -6px -6px 12px #ffffff;
+            font: {
+                weight: 600;
+                family: $familyOpen;
+                size: 18px;
+            }
+        }
+        &__button:hover {
+            background-color: $lightPink;
+        }
+    }
+    
+    .r3 {
+        display: flex;
+        justify-content: center;
+        &__img {
+            width: 900px;
+        }
+    }
+    
+    .r5-d {
+        height: 400px;
+        display: flex;
+        align-content: center;
+    }
+    
+    .r5 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .r5Bg {
+        width: 100%;
+    }
+    
+    .r5-a {
+        &__img {
+            width: 40px;
+        }
+        &__nmb {
+            color: $veryDarkCyan;
+            font: {
+                size: 70px;
+                weight: 700;
+                family: $familyOpen;
+            }
+        }
+        &__text {
+            color: $veryDarkCyan;
+            opacity: 70%;
+            font: {
+                size: 18px;
+                family: $familyOpen;
+                weight: 400;
+            }
+        }
+    }
+    
+    .r5-b {
+        &__img {
+            width: 40px;
+        }
+        &__nmb {
+            color: $veryDarkCyan;
+            font: {
+                size: 70px;
+                weight: 700;
+                family: $familyOpen;
+            }
+        }
+        &__text {
+            text-align: center;
+            opacity: 70%;
+            font: {
+                size: 18px;
+                family: $familyOpen;
+                weight: 400;
+            }
+        }
+    }
+    
+    .r6-d {
+        height: 600px;
+        display: flex;
+        align-content: center;
+    }
+    
+    .r6Flex {
+        display: flex;
+        align-items: center;
+    }
+    
+    .r6-bg {
+        background-color: $veryPaleBlue;
+    }
+    
+    .r6Img {
+        width: 500px;
+    }
+    
+    .r6 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &__title {
+            color: $veryDarkCyan;
+            font: {
+                weight: 700;
+                family: $familyPoppins;
+                size: 42px;
+            }
+        }
+        &__paragraph {
+            font: {
+                weight: 400;
+                family: $familyOpen;
+                size: 16px;
+            }
+        }
+    }
+    
+    .r7Bg {
+        width: 100%;
+    }
+    
+    .r8-d {
+        height: 600px;
+        display: flex;
+        align-content: center;
+    }
+    
+    .r8Flex {
+        display: flex;
+        align-items: center;
+    }
+    
+    .r8Img {
+        width: 500px;
+    }
+    
+    .r8 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        &__title {
+            color: $veryDarkCyan;
+            font: {
+                weight: 700;
+                family: $familyPoppins;
+                size: 42px;
+            }
+        }
+        &__paragraph {
+            font: {
+                weight: 400;
+                family: $familyOpen;
+                size: 16px;
+            }
+        }
+    }
+    
+    .r9Bg {
+        width: 100%;
+    }
+    
+    .r10bg {
+        background-color: $veryPaleBlue;
+    }
+    
+    .r10Flex {
+        display: flex;
+        align-items: center;
+    }
+    
+    .r10 {
+        &__title {
+            color: $veryDarkCyan;
+            font: {
+                weight: 700;
+                family: $familyPoppins;
+                size: 42px;
+            }
+        }
+        &__paragraph {
+            font: {
+                weight: 400;
+                family: $familyOpen;
+                size: 16px;
+            }
+        }
+    }
+    
+    .r10Img {
+        width: 500px;
+    }
+    
+    .r11Bg {
+        width: 100%;
+    }
+    
+    .r12-d {
+        height: 450px;
+        display: flex;
+        align-content: center;
+    }
+    
+    .r12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            color: $veryDarkCyan;
+            font: {
+                weight: 700;
+                family: $familyPoppins;
+                size: 44px;
+            }
+        }
+        &__button {
+            color: $veryPaleBlue;
+            padding: 20px 70px;
+            background-color: $pink;
+            border-radius: 36px;
+            border: none;
+            box-shadow: 6px 6px 12px #ababab, -6px -6px 12px #ffffff;
+            font: {
+                weight: 600;
+                family: $familyOpen;
+                size: 18px;
+            }
+        }
+        &__button:hover {
+            background-color: $lightPink;
+        }
+    }
+    
+    .r13Bg {
+        width: 100%;
+    }
+    
+    .r14bg {
+        background-color: $veryDarkCyan;
+        color: $veryPaleBlue;
+        padding: 50px 0px;
+    }
+    
+    .r14Flex {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .r14 {
+        &__lF {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            &--title {
+                padding: 5px 0px;
+                font: {
+                    size: 46px;
+                    family: $familyPoppins;
+                    weight: 700;
+                }
+            }
+        }
+        &__paragraph {
+            font-size: 14px;
+            font-family: $familyOpen;
+        }
+        &__contact {
+            padding: 8px 0px;
+            &--p {
+                padding: 0px 15px;
+            }
+        }
+        &__socialMedia {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 130px;
+            padding: 35px 1px;
+        }
+    }
+    
+    .r14BFlex {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    
+    .r14B {
+        &__title {
+            text-transform: uppercase;
+            font: {
+                size: 24px;
+                family: $familyOpen;
+                weight: 600;
+            }
+        }
+        &__paragraph {
+            font-size: 14px;
+            padding-bottom: 15px;
+        }
+        &__text {
+            border-radius: 8px;
+            padding: 10px 85px 10px 15px;
+        }
+        &__button {
+            border-radius: 8px;
+            background-color: $pink;
+            color: $veryPaleBlue;
+            border: none;
+            padding: 10px 45px;
+            font: {
+                weight: 600;
+                family: $familyOpen;
+                size: 18px;
+            }
+        }
+        &__button:hover {
+            background-color: $lightPink;
+        }
+    }
